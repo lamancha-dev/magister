@@ -1,1 +1,0 @@
-MAGISTER 4.1 — cartões da visão geral com quatro cores da identidade visual; melhor contraste, acabamento e cartões mobile. Base: versão 4.0. Não altera dados, sincronização nem autenticação.
