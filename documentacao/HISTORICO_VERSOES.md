@@ -1,5 +1,11 @@
 # Histórico de versões da MAGISTER
 
+## Versão 4.4
+
+- Sincronização automática com o Google Drive: as alterações são enviadas 2 segundos depois de feitas e ao sair da aplicação; são recebidas ao abrir ou voltar à aplicação e a cada 30 segundos.
+- Quando os dois aparelhos têm alterações, a aplicação junta-as em vez de perguntar qual apagar.
+- A ligação à conta Google fica lembrada; quando a Google pede renovação, aparece o botão «Toque para sincronizar».
+
 ## Versão 4.3
 
 - Cartões da visão geral com as cores do logótipo (turquesa, azul-petróleo, amarelo e branco).
