@@ -4,7 +4,7 @@ const $=id=>document.getElementById(id), base='https://www.googleapis.com/drive/
 const key='magister-drive-client-id', syncKey='magister-drive-baseline-v1';
 let token='',tokenClient=null,fileId='',remoteVersion='',baseline=localStorage.getItem(syncKey)||'',busy=false,dirty=false,timer=null;
 const status=msg=>{$('driveStatus').textContent=msg};
-const clientId=localStorage.getItem(key)||'';$('driveClientId').value=clientId;
+const clientId=localStorage.getItem(key)||'331754035238-gls1ttgk5a7u1n3c31a5o31ek9gtgkv1.apps.googleusercontent.com';$('driveClientId').value=clientId;
 function snapshot(){return JSON.stringify({version:3,items:data.items,breaks:data.breaks,logo:data.logo,schoolLogo:data.schoolLogo,teacherName:data.teacherName,teacherTitle:data.teacherTitle,schoolYear});}
 function hasContent(s){try{const d=JSON.parse(s);return !!((d.items||[]).length||(d.breaks||[]).length||d.logo||d.schoolLogo||d.teacherName)}catch{return false}}
 function install(s){const d=JSON.parse(s);if(!Array.isArray(d.items)||!Array.isArray(d.breaks))throw Error('Dados inválidos no Drive');data={...data,...d};schoolYear=Number(d.schoolYear)||schoolYear;localStorage.setItem(storage,JSON.stringify(data));$('teacherName').value=data.teacherName||'';$('teacherTitle').value=data.teacherTitle||'Professora';renderSchoolLogo();renderLogo();render();}

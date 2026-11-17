@@ -1,0 +1,1 @@
+MAGISTER 3.9: Acesso Perfil e dados na barra inferior móvel (sexto botão) e no cabeçalho. Mantém Google Drive e restantes funções. Substituir os ficheiros na raiz do repositório e confirmar Commit changes.
