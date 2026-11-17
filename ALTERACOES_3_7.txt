@@ -1,0 +1,5 @@
+MAGISTER 3.7
+- O logótipo da escola pode ser substituído clicando diretamente nele, tal como o logótipo do professor.
+- Em Perfil e dados > Logótipos pode alterar ou repor o logótipo original da escola.
+- Os logótipos são independentes e as restantes funcionalidades foram mantidas.
+- Atualizada a cache da aplicação para v3.7.
