@@ -1,6 +1,0 @@
-MAGISTER 3.8 — Correção móvel
-- Botão de definições (engrenagem) visível no topo do telemóvel, com acesso direto a Perfil e dados e à sincronização Google Drive.
-- Mantidos os cinco atalhos inferiores (Início, Agenda, Horário, Tarefas, TPC).
-- Ajustado o botão Novo registo no ecrã pequeno.
-- Cache da aplicação atualizada para v3.8.
-- Não altera dados guardados, permissões nem lógica da sincronização.
