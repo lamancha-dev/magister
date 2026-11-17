@@ -1,1 +1,0 @@
-MAGISTER 4.0 — cabeçalho móvel: M + MAGISTER lado a lado, engrenagem discreta alinhada à direita, sem botão Perfil na barra inferior. A engrenagem abre Perfil e dados. Mantidos ficheiros de sincronização Google Drive.
