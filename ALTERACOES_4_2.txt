@@ -1,1 +1,0 @@
-MAGISTER 4.2 — Google Drive: Client ID OAuth público predefinido, sem necessidade de o copiar. Mantém a autorização Google por utilizador.
