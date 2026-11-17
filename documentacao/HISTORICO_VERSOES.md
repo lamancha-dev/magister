@@ -1,5 +1,9 @@
 # Histórico de versões da MAGISTER
 
+## Versão 4.5
+
+- Corrigido: os aparelhos continuavam a usar ficheiros antigos guardados na memória do navegador depois de uma atualização. Agora vão sempre buscar a versão mais recente.
+
 ## Versão 4.4
 
 - Sincronização automática com o Google Drive: as alterações são enviadas 2 segundos depois de feitas e ao sair da aplicação; são recebidas ao abrir ou voltar à aplicação e a cada 30 segundos.
