@@ -284,7 +284,97 @@
 /* Roda dentada */
 .mobile-settings svg,.mobile-bottom-nav button[data-view="definicoes"] svg{fill:none!important;stroke:currentColor!important;stroke-width:1.6!important;stroke-linejoin:round!important;stroke-linecap:round!important}
 .mobile-settings{transition:transform .25s ease}.mobile-settings:active{transform:rotate(30deg)}
-</style></head><body><div class="app"><aside class="side"><div class="brand"><img alt="MAGISTER — M geométrico branco, turquesa e amarelo" class="magister-brand" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDAiIGhlaWdodD0iMjEwIiB2aWV3Qm94PSIwIDAgMjQwIDIxMCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIzIDE4OFYyMkwxMTcgMTE5IDk1IDE0NCA1NSA5OVYxODhaIi8+PHBhdGggZmlsbD0iIzA1RTFDRiIgZD0iTTk5IDE0NCAyMDkgMjJWODVMMTIxIDE4MFoiLz48cGF0aCBmaWxsPSIjRkZCRjA4IiBkPSJNMTcyIDE4OFYxMzBMMjA5IDg5VjE4OFoiLz48L3N2Zz4=" title="MAGISTER"/><span class="mobile-brand-name" aria-hidden="true">MAGISTER</span><div class="brand-tagline">O TEU TEMPO. A TUA ESCOLA.</div><div class="brand-divider" aria-hidden="true"></div></div><nav class="nav" id="nav"><button class="active" data-view="inicio">◫   Visão geral</button><button data-view="calendario">▦   Calendário</button><button data-view="horario">◷   Horário</button><button data-view="tarefas">☑   Tarefas</button><button data-view="tpc">▤   TPC pedidos</button><button data-view="definicoes">⚙   Perfil e dados</button></nav><div aria-label="Logótipos da escola e do professor" class="sidebar-logos"><div class="school-brand logo-card"><div class="school-caption">ESCOLA</div><div class="logo-frame" role="button" tabindex="0" title="Clique para alterar o logótipo"><img alt="Logótipo da escola" class="school-logo" id="schoolLogo" src="aejd-logo.png" title="Clicar para alterar o logótipo da escola"/></div></div><div class="teacher-brand logo-card"><div class="teacher-caption">PROFESSOR</div><div class="logo-frame" role="button" tabindex="0" title="Clique para alterar o logótipo"><img alt="Logótipo pessoal do professor" class="brandlogo hidden" id="customLogo"/></div><div class="teacher-placeholder" id="brandText">O teu logótipo</div></div><input accept="image/png,image/jpeg,image/webp" hidden="" id="logoUpload" type="file"/></div><div class="foot">MAGISTER · Versão 4.5<br/>Dados guardados neste dispositivo<button hidden="hidden" id="logoRemove" type="button"></button></div><button type="button" class="mobile-settings" data-view="definicoes" aria-label="Perfil e dados — sincronização Google Drive" title="Perfil e dados"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.34 10.05 L22.05 10.27 L22.05 13.73 L19.34 13.95 L18.57 15.81 L20.33 17.89 L17.89 20.33 L15.81 18.57 L13.95 19.34 L13.73 22.05 L10.27 22.05 L10.05 19.34 L8.19 18.57 L6.11 20.33 L3.67 17.89 L5.43 15.81 L4.66 13.95 L1.95 13.73 L1.95 10.27 L4.66 10.05 L5.43 8.19 L3.67 6.11 L6.11 3.67 L8.19 5.43 L10.05 4.66 L10.27 1.95 L13.73 1.95 L13.95 4.66 L15.81 5.43 L17.89 3.67 L20.33 6.11 L18.57 8.19Z"/><circle cx="12" cy="12" r="3.2"/></svg></button></aside><main class="main"><header class="top"><div><div class="eyebrow" id="subtitle">O teu espaço de organização</div><h1 id="title">Bem-vindo à MAGISTER</h1></div><button class="btn" id="add">+ Novo registo</button></header><section id="inicio"><div class="cards"><div class="stat"><span class="muted">Compromissos hoje</span><b id="todayCount">0</b><span class="muted">No teu calendário</span></div><div class="stat"><span class="muted">Tarefas pendentes</span><b id="taskCount">0</b><span class="muted">Por concluir</span></div><div class="stat"><span class="muted">TPC por entregar</span><b id="classCount">0</b><span class="muted">Trabalhos pedidos</span></div><div class="stat"><span class="muted">Próximos 7 dias</span><b id="weekCount">0</b><span class="muted">Compromissos</span></div></div><div class="content"><div class="panel"><div class="calhead"><h2 id="monthLabel"></h2><div class="arrows"><button aria-label="Mês anterior" id="prev">‹</button><button aria-label="Mês seguinte" id="next">›</button><button id="now">Hoje</button></div></div><div class="calendar" id="calendar"></div></div><div class="panel"><h2 id="dayTitle">Agenda do dia</h2><div id="dayEvents"></div></div></div></section><section class="hidden" id="calendario"><div class="panel"><div class="calhead"><h2 id="monthLabel2"></h2><div class="arrows"><button id="prev2">‹</button><button id="next2">›</button><button id="now2">Hoje</button></div></div><div class="calendar" id="calendar2"></div><h2 id="dayTitle2" style="margin-top:22px"></h2><div id="dayEvents2"></div></div></section><section class="hidden" id="horario"><div class="panel"><h2>Horário do ano letivo</h2><p class="help">Horário fixo: cada aula repete-se no mesmo dia e hora durante todo o ano letivo. A sala aparece no próprio bloco da aula.</p><div class="toolbar"><label>Ano letivo <select id="schoolYear"><option value="2025">2025/2026</option><option value="2026">2026/2027</option><option value="2027">2027/2028</option><option value="2028">2028/2029</option><option value="2029">2029/2030</option><option value="2030">2030/2031</option></select></label></div><div class="weekwrap"><div class="weekgrid" id="weekGrid"></div></div></div></section><section class="hidden" id="tarefas"><div class="panel"><h2>As minhas tarefas</h2><div class="toolbar"><select id="taskFilter"><option value="all">Todas</option><option value="pending">Pendentes</option><option value="done">Concluídas</option></select></div><div id="taskList"></div></div></section><section class="hidden" id="tpc"><div class="panel"><h2>TPC pedidos</h2><p class="help">Regista os trabalhos pedidos, a turma, a disciplina e a data de entrega. Assinala quando estiverem concluídos.</p><div class="toolbar"><label class="tpc-filter-label">Turma <select id="tpcTurmaFilter"><option value="all">Todas as turmas</option></select></label><select id="tpcFilter"><option value="all">Todos</option><option value="pending">Por entregar</option><option value="done">Concluídos</option></select></div><div id="tpcList"></div></div></section><section class="hidden" id="definicoes"><div class="panel"><h2>Perfil do professor</h2><p class="help">Personaliza a forma como a MAGISTER te cumprimenta. O logótipo pessoal é carregado no menu lateral, sem substituir a marca MAGISTER.</p><form id="profileForm"><label>Nome pelo qual queres ser tratado(a)<input id="teacherName" maxlength="80" name="teacherName" placeholder="Ex.: Antónia" required=""/></label><label>Forma de tratamento<select id="teacherTitle" name="teacherTitle"><option value="Professora">Professora</option><option value="Professor">Professor</option><option value="Docente">Docente</option><option value="">Só o nome</option></select></label><button class="btn" type="submit">Guardar perfil</button></form></div><div class="panel" style="margin-top:18px"><h2>Cópia de segurança</h2><p class="help">Os dados continuam neste navegador. Exporta uma cópia antes de mudar de dispositivo ou limpar os dados do navegador. A importação substitui os registos atuais.</p><div class="toolbar"><button class="btn" id="exportData" type="button">Exportar dados (.json)</button><label class="btn secondary" for="importData" style="cursor:pointer">Importar cópia<input accept="application/json,.json" id="importData" style="display:none" type="file"/></label></div></div><div class="panel" style="margin-top:18px" id="drivePanel"><h2>Sincronização com Google Drive</h2><p class="help">Os teus dados ficam numa área privada da MAGISTER no teu Google Drive. A ligação requer autorização Google e Internet. Cada professor deve usar a sua própria conta.</p><label>Client ID OAuth da aplicação Google<input id="driveClientId" type="text" autocomplete="off" placeholder="...apps.googleusercontent.com" /></label><div class="toolbar" style="margin-top:12px"><button class="btn" id="driveConnect" type="button">Ligar conta Google</button><button class="btn secondary" id="driveSync" type="button" disabled>Sincronizar agora</button><button class="btn secondary" id="driveDisconnect" type="button" disabled>Desligar</button></div><p id="driveStatus" class="help" role="status">Drive não ligado. Os dados continuam guardados neste dispositivo.</p><p class="help">A primeira sincronização pergunta o que fazer se já existirem dados diferentes no Drive. Não elimina dados automaticamente. O acesso Google poderá ter de ser renovado.</p></div><div class="panel" style="margin-top:18px"><h2>Interrupções letivas e feriados</h2><p class="help">Nestes dias as aulas não aparecem no calendário nem dão alertas. Podes acrescentar de uma vez os feriados nacionais do ano letivo escolhido no Horário.</p><form id="breakForm" class="toolbar breakform"><label>Descrição<input name="label" placeholder="Ex.: Férias do Natal" maxlength="60" required></label><label>De<input type="date" name="start" required></label><label>Até<input type="date" name="end" required></label><button class="btn" type="submit">Acrescentar</button><button class="btn secondary" type="button" id="addHolidays">Acrescentar feriados nacionais</button></form><div id="breakList"></div></div><div class="panel logo-settings" style="margin-top:18px"><h2>Logótipos</h2><p class="muted">Os logótipos aparecem lado a lado no fundo da barra lateral. Depois de carregados, desaparece a caixa de carregamento.</p><div class="settings-logo-controls"><label class="btn secondary" for="schoolLogoUpload">Alterar logótipo da escola</label><input accept="image/png,image/jpeg,image/webp" hidden="" id="schoolLogoUpload" type="file"/><label class="btn secondary" for="logoUpload">Alterar logótipo do professor</label><button class="btn secondary" id="schoolLogoRemoveSettings" type="button">Repor logótipo da escola</button><button class="btn secondary" id="logoRemoveSettings" type="button">Remover logótipo do professor</button></div></div></section></main></div><dialog id="modal"><form id="recordForm"><h2>Novo registo</h2><label>Tipo<select id="type" name="type"><option value="evento">Compromisso / reunião</option><option value="aula">Aula</option><option value="tarefa">Tarefa</option><option value="avaliacao">Avaliação</option><option value="tpc">TPC pedido</option></select></label><label>Título<input maxlength="120" name="title" placeholder="Ex.: Reunião de departamento" required=""/></label><label>Data<input name="date" required="" type="date"/></label><label>Hora<input name="time" type="time" value="09:00"/></label><label id="roomField">Sala da aula (obrigatória)<input maxlength="40" name="room" placeholder="Ex.: C2.8"/></label><label class="hidden" id="turmaField">Turma (obrigatória para TPC)<input maxlength="50" name="turma" placeholder="Ex.: 11.º A"/></label><label id="subjectField">Disciplina / grupo<input maxlength="80" name="subject" placeholder="Ex.: Português"/></label><label id="durationField">Duração (minutos)<input max="360" min="15" name="duration" step="5" type="number" value="50"/></label><p class="help" id="repeatField">As aulas são automaticamente semanais durante o ano letivo selecionado.</p><label id="reminderField">Avisar antes<select name="reminder"><option value="">Sem alerta</option><option value="0">Na hora</option><option value="5">5 minutos</option><option value="15">15 minutos</option><option value="30">30 minutos</option><option value="60">1 hora</option><option value="1440">1 dia</option></select></label><label>Notas<textarea name="notes" placeholder="Informações adicionais"></textarea></label><div class="formactions"><button class="btn secondary" id="cancel" type="button">Cancelar</button><button class="btn" type="submit">Guardar</button></div></form></dialog><nav class="mobile-bottom-nav" aria-label="Navegação principal">
+</style><style>
+/* MAGISTER 4.6 — visão alargada: resumo, semana, mês, a fazer e datas importantes */
+.t-aula{--c:#0a9c93;--bg:#e0f6f4}.t-evento{--c:#174d67;--bg:#e5eef5}.t-avaliacao{--c:#a37400;--bg:#fff2c4}.t-tarefa{--c:#c2475a;--bg:#fde9ec}.t-tpc{--c:#6a4bb0;--bg:#efeafb}.t-brk{--c:#6f8489;--bg:#eef2f3}
+.dot[class*="t-"]{background:var(--c)}
+.event[class*="t-"] .line{background:var(--c)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:#55747a;font-weight:600}
+.legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--c);margin-right:5px;vertical-align:-1px}
+.viewbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.seg{display:inline-flex;background:#e8f2f3;border-radius:12px;padding:4px;gap:4px}
+.seg button{border:0;background:transparent;padding:9px 18px;border-radius:9px;font-weight:700;color:#21545c}
+.seg button.on{background:#073943;color:#fff}
+/* cartões do resumo */
+#inicio .cards .stat{font:inherit;text-align:left;cursor:pointer;width:100%;display:block}
+#inicio .cards .stat .info{display:block;font-size:12px;line-height:1.4;font-weight:600;opacity:.85;min-height:17px}
+#inicio .stat.late-alert{background:#fde9ec!important;color:#a3263a!important}
+/* datas importantes */
+.keyhead{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:0 0 9px}
+.keyhead h2{margin:0;font-size:15px;color:#073943}
+.keyhead small{color:#68838a;font-size:12px}
+.keydates{display:flex;gap:10px;overflow-x:auto;padding:2px 2px 8px;margin-bottom:14px;scrollbar-width:thin}
+.kd{flex:0 0 auto;min-width:175px;max-width:240px;background:#fff;border:1px solid #e2ebed;border-left:5px solid var(--c);border-radius:14px;padding:10px 14px;text-align:left;cursor:pointer;color:#18343b;box-shadow:0 4px 14px rgba(7,57,67,.05)}
+.kd .when{font-size:11px;font-weight:800;color:var(--c);text-transform:uppercase;letter-spacing:.5px}
+.kd strong{display:block;font-size:14px;margin:3px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kd small{color:#68838a;font-size:12px}
+.kd.soon{background:var(--bg)}
+.keyempty{color:#7b9296;font-size:13px;margin:0 0 16px}
+/* semana */
+.wkhead-bar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.wkhead-bar h2{margin:0}
+.wktools{display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+.wktools button{border:0;border-radius:8px;background:#e8f2f3;padding:8px 12px;color:#21545c;font-weight:600}
+.wktools label{display:flex;align-items:center;gap:6px;font-size:13px;color:#21545c;font-weight:600;margin-right:6px}
+.wktools input{accent-color:#087984;width:17px;height:17px}
+.wkwrap{overflow-x:auto}
+.wk{display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr));gap:8px;min-width:720px}
+.wkday{background:#f6fafa;border:1px solid #e3eeef;border-radius:12px;padding:8px;min-height:150px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.wkday.today{border-color:#05b8ab;box-shadow:inset 0 4px 0 #05b8ab;background:#f0fbfa}
+.wkday.brk{background:repeating-linear-gradient(45deg,#f3f5f6,#f3f5f6 8px,#eceff1 8px,#eceff1 16px)}
+.wkdayhead{display:flex;justify-content:space-between;align-items:baseline;border:0;background:none;padding:2px 2px 6px;font-weight:750;color:#073943;text-align:left;width:100%;font-size:14px}
+.wkdayhead small{color:#68838a;font-weight:600;font-size:12px}
+.wkbrk{font-size:11px;font-weight:700;color:#55696e;background:#fff;border-radius:6px;padding:3px 6px}
+.witem{display:block;width:100%;text-align:left;border:0;border-left:4px solid var(--c);background:var(--bg);color:#18343b;border-radius:8px;padding:6px 8px;font-size:12px;line-height:1.3;cursor:pointer}
+.witem b{display:block;font-size:11px;color:var(--c)}
+.witem small{display:block;color:#5d777d;font-size:11px}
+.witem.done{opacity:.5;text-decoration:line-through}
+.wkfree{font-size:12px;color:#9aaeb2;padding:4px 2px}
+/* calendário do mês com etiquetas */
+.chips{display:flex;flex-direction:column;gap:2px;min-width:0;width:100%}
+.chip{display:block;font-size:10.5px;line-height:1.3;padding:2px 5px;border-radius:5px;background:var(--bg);color:var(--c);font-weight:650;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-left:3px solid var(--c)}
+.chip.done{opacity:.45;text-decoration:line-through}
+.chipmore{font-size:10px;color:#68838a;font-weight:700}
+#calendar2 .day{min-height:100px;min-width:0;overflow:hidden}
+/* a fazer */
+.todohead{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:4px}
+.todohead h2{margin:0}
+.linkbtn{border:0;background:none;color:#087984;font-weight:700;font-size:13px;padding:4px}
+.todogroup h3{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#52818a;margin:14px 0 2px}
+.todogroup.late h3{color:#c2475a}
+.todorow{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #edf2f3}
+.todorow:last-child{border:0}
+.todorow .tt{flex:1;min-width:0;cursor:pointer}
+.todorow strong{font-size:14px;display:block}
+.todorow small{color:#6c878d;font-size:12px}
+.todogroup.late .todorow small{color:#c2475a;font-weight:600}
+.typetag{display:inline-block;font-size:10px;font-weight:800;border-radius:5px;padding:2px 6px;background:var(--bg);color:var(--c);margin-right:6px;vertical-align:1px}
+.sidecol{display:grid;gap:20px;align-content:start;min-width:0}
+#weekHomePanel{margin-bottom:20px}
+#printArea{display:none}
+@media(max-width:680px){
+ .wk{grid-template-columns:1fr;min-width:0}
+ .wkday{min-height:0}
+ .wkday.empty{flex-direction:row;align-items:center;justify-content:space-between;padding:6px 8px}
+ .wkday.empty .wkdayhead{padding:0;width:auto}
+ #calendar2 .day{min-height:62px}
+ #calendar2 .chip{font-size:0;height:5px;padding:0;border-radius:3px;border:0;background:var(--c)}
+ #calendar2 .chipmore{display:none}
+ .seg button{padding:8px 13px}
+ #weekHomePanel{margin-bottom:12px}
+ #inicio{display:flex;flex-direction:column;gap:12px}#inicio .content,#inicio .sidecol{display:contents}#inicio .cards{margin:0}#keyDates{order:1}#inicio .cards{order:2}#todoPanel{order:3}#weekHomePanel{order:4;margin:0}#inicio .sidecol>.panel:last-child{order:5}#inicio .content>.panel:first-child{order:6}.keydates{margin-bottom:0}
+ .sidecol{gap:12px}
+}
+@media print{
+ body.printing>*:not(#printArea){display:none!important}
+ body.printing #printArea{display:block!important;font-family:Inter,'Segoe UI',Arial,sans-serif;color:#18343b}
+ #printArea .noprint{display:none!important}
+ #printArea .wk{min-width:0;gap:5px}
+ #printArea .wkday{min-height:420px;break-inside:avoid}
+ #printArea *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ @page{size:landscape;margin:12mm}
+}
+</style></head><body><div class="app"><aside class="side"><div class="brand"><img alt="MAGISTER — M geométrico branco, turquesa e amarelo" class="magister-brand" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDAiIGhlaWdodD0iMjEwIiB2aWV3Qm94PSIwIDAgMjQwIDIxMCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIzIDE4OFYyMkwxMTcgMTE5IDk1IDE0NCA1NSA5OVYxODhaIi8+PHBhdGggZmlsbD0iIzA1RTFDRiIgZD0iTTk5IDE0NCAyMDkgMjJWODVMMTIxIDE4MFoiLz48cGF0aCBmaWxsPSIjRkZCRjA4IiBkPSJNMTcyIDE4OFYxMzBMMjA5IDg5VjE4OFoiLz48L3N2Zz4=" title="MAGISTER"/><span class="mobile-brand-name" aria-hidden="true">MAGISTER</span><div class="brand-tagline">O TEU TEMPO. A TUA ESCOLA.</div><div class="brand-divider" aria-hidden="true"></div></div><nav class="nav" id="nav"><button class="active" data-view="inicio">◫   Visão geral</button><button data-view="calendario">▦   Calendário</button><button data-view="horario">◷   Horário</button><button data-view="tarefas">☑   Tarefas</button><button data-view="tpc">▤   TPC pedidos</button><button data-view="definicoes">⚙   Perfil e dados</button></nav><div aria-label="Logótipos da escola e do professor" class="sidebar-logos"><div class="school-brand logo-card"><div class="school-caption">ESCOLA</div><div class="logo-frame" role="button" tabindex="0" title="Clique para alterar o logótipo"><img alt="Logótipo da escola" class="school-logo" id="schoolLogo" src="aejd-logo.png" title="Clicar para alterar o logótipo da escola"/></div></div><div class="teacher-brand logo-card"><div class="teacher-caption">PROFESSOR</div><div class="logo-frame" role="button" tabindex="0" title="Clique para alterar o logótipo"><img alt="Logótipo pessoal do professor" class="brandlogo hidden" id="customLogo"/></div><div class="teacher-placeholder" id="brandText">O teu logótipo</div></div><input accept="image/png,image/jpeg,image/webp" hidden="" id="logoUpload" type="file"/></div><div class="foot">MAGISTER · Versão 4.6<br/>Dados guardados neste dispositivo<button hidden="hidden" id="logoRemove" type="button"></button></div><button type="button" class="mobile-settings" data-view="definicoes" aria-label="Perfil e dados — sincronização Google Drive" title="Perfil e dados"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.34 10.05 L22.05 10.27 L22.05 13.73 L19.34 13.95 L18.57 15.81 L20.33 17.89 L17.89 20.33 L15.81 18.57 L13.95 19.34 L13.73 22.05 L10.27 22.05 L10.05 19.34 L8.19 18.57 L6.11 20.33 L3.67 17.89 L5.43 15.81 L4.66 13.95 L1.95 13.73 L1.95 10.27 L4.66 10.05 L5.43 8.19 L3.67 6.11 L6.11 3.67 L8.19 5.43 L10.05 4.66 L10.27 1.95 L13.73 1.95 L13.95 4.66 L15.81 5.43 L17.89 3.67 L20.33 6.11 L18.57 8.19Z"/><circle cx="12" cy="12" r="3.2"/></svg></button></aside><main class="main"><header class="top"><div><div class="eyebrow" id="subtitle">O teu espaço de organização</div><h1 id="title">Bem-vindo à MAGISTER</h1></div><button class="btn" id="add">+ Novo registo</button></header><section id="inicio"><div class="cards"><div class="stat"><span class="muted">Compromissos hoje</span><b id="todayCount">0</b><span class="muted">No teu calendário</span></div><div class="stat"><span class="muted">Tarefas pendentes</span><b id="taskCount">0</b><span class="muted">Por concluir</span></div><div class="stat"><span class="muted">TPC por entregar</span><b id="classCount">0</b><span class="muted">Trabalhos pedidos</span></div><div class="stat"><span class="muted">Próximos 7 dias</span><b id="weekCount">0</b><span class="muted">Compromissos</span></div></div><div class="content"><div class="panel"><div class="calhead"><h2 id="monthLabel"></h2><div class="arrows"><button aria-label="Mês anterior" id="prev">‹</button><button aria-label="Mês seguinte" id="next">›</button><button id="now">Hoje</button></div></div><div class="calendar" id="calendar"></div></div><div class="panel"><h2 id="dayTitle">Agenda do dia</h2><div id="dayEvents"></div></div></div></section><section class="hidden" id="calendario"><div class="panel"><div class="calhead"><h2 id="monthLabel2"></h2><div class="arrows"><button id="prev2">‹</button><button id="next2">›</button><button id="now2">Hoje</button></div></div><div class="calendar" id="calendar2"></div><h2 id="dayTitle2" style="margin-top:22px"></h2><div id="dayEvents2"></div></div></section><section class="hidden" id="horario"><div class="panel"><h2>Horário do ano letivo</h2><p class="help">Horário fixo: cada aula repete-se no mesmo dia e hora durante todo o ano letivo. A sala aparece no próprio bloco da aula.</p><div class="toolbar"><label>Ano letivo <select id="schoolYear"><option value="2025">2025/2026</option><option value="2026">2026/2027</option><option value="2027">2027/2028</option><option value="2028">2028/2029</option><option value="2029">2029/2030</option><option value="2030">2030/2031</option></select></label></div><div class="weekwrap"><div class="weekgrid" id="weekGrid"></div></div></div></section><section class="hidden" id="tarefas"><div class="panel"><h2>As minhas tarefas</h2><div class="toolbar"><select id="taskFilter"><option value="all">Todas</option><option value="pending">Pendentes</option><option value="done">Concluídas</option></select></div><div id="taskList"></div></div></section><section class="hidden" id="tpc"><div class="panel"><h2>TPC pedidos</h2><p class="help">Regista os trabalhos pedidos, a turma, a disciplina e a data de entrega. Assinala quando estiverem concluídos.</p><div class="toolbar"><label class="tpc-filter-label">Turma <select id="tpcTurmaFilter"><option value="all">Todas as turmas</option></select></label><select id="tpcFilter"><option value="all">Todos</option><option value="pending">Por entregar</option><option value="done">Concluídos</option></select></div><div id="tpcList"></div></div></section><section class="hidden" id="definicoes"><div class="panel"><h2>Perfil do professor</h2><p class="help">Personaliza a forma como a MAGISTER te cumprimenta. O logótipo pessoal é carregado no menu lateral, sem substituir a marca MAGISTER.</p><form id="profileForm"><label>Nome pelo qual queres ser tratado(a)<input id="teacherName" maxlength="80" name="teacherName" placeholder="Ex.: Antónia" required=""/></label><label>Forma de tratamento<select id="teacherTitle" name="teacherTitle"><option value="Professora">Professora</option><option value="Professor">Professor</option><option value="Docente">Docente</option><option value="">Só o nome</option></select></label><button class="btn" type="submit">Guardar perfil</button></form></div><div class="panel" style="margin-top:18px"><h2>Cópia de segurança</h2><p class="help">Os dados continuam neste navegador. Exporta uma cópia antes de mudar de dispositivo ou limpar os dados do navegador. A importação substitui os registos atuais.</p><div class="toolbar"><button class="btn" id="exportData" type="button">Exportar dados (.json)</button><label class="btn secondary" for="importData" style="cursor:pointer">Importar cópia<input accept="application/json,.json" id="importData" style="display:none" type="file"/></label></div></div><div class="panel" style="margin-top:18px" id="drivePanel"><h2>Sincronização com Google Drive</h2><p class="help">Os teus dados ficam numa área privada da MAGISTER no teu Google Drive. A ligação requer autorização Google e Internet. Cada professor deve usar a sua própria conta.</p><label>Client ID OAuth da aplicação Google<input id="driveClientId" type="text" autocomplete="off" placeholder="...apps.googleusercontent.com" /></label><div class="toolbar" style="margin-top:12px"><button class="btn" id="driveConnect" type="button">Ligar conta Google</button><button class="btn secondary" id="driveSync" type="button" disabled>Sincronizar agora</button><button class="btn secondary" id="driveDisconnect" type="button" disabled>Desligar</button></div><p id="driveStatus" class="help" role="status">Drive não ligado. Os dados continuam guardados neste dispositivo.</p><p class="help">A primeira sincronização pergunta o que fazer se já existirem dados diferentes no Drive. Não elimina dados automaticamente. O acesso Google poderá ter de ser renovado.</p></div><div class="panel" style="margin-top:18px"><h2>Interrupções letivas e feriados</h2><p class="help">Nestes dias as aulas não aparecem no calendário nem dão alertas. Podes acrescentar de uma vez os feriados nacionais do ano letivo escolhido no Horário.</p><form id="breakForm" class="toolbar breakform"><label>Descrição<input name="label" placeholder="Ex.: Férias do Natal" maxlength="60" required></label><label>De<input type="date" name="start" required></label><label>Até<input type="date" name="end" required></label><button class="btn" type="submit">Acrescentar</button><button class="btn secondary" type="button" id="addHolidays">Acrescentar feriados nacionais</button></form><div id="breakList"></div></div><div class="panel logo-settings" style="margin-top:18px"><h2>Logótipos</h2><p class="muted">Os logótipos aparecem lado a lado no fundo da barra lateral. Depois de carregados, desaparece a caixa de carregamento.</p><div class="settings-logo-controls"><label class="btn secondary" for="schoolLogoUpload">Alterar logótipo da escola</label><input accept="image/png,image/jpeg,image/webp" hidden="" id="schoolLogoUpload" type="file"/><label class="btn secondary" for="logoUpload">Alterar logótipo do professor</label><button class="btn secondary" id="schoolLogoRemoveSettings" type="button">Repor logótipo da escola</button><button class="btn secondary" id="logoRemoveSettings" type="button">Remover logótipo do professor</button></div></div></section></main></div><dialog id="modal"><form id="recordForm"><h2>Novo registo</h2><label>Tipo<select id="type" name="type"><option value="evento">Compromisso / reunião</option><option value="aula">Aula</option><option value="tarefa">Tarefa</option><option value="avaliacao">Avaliação</option><option value="tpc">TPC pedido</option></select></label><label>Título<input maxlength="120" name="title" placeholder="Ex.: Reunião de departamento" required=""/></label><label>Data<input name="date" required="" type="date"/></label><label>Hora<input name="time" type="time" value="09:00"/></label><label id="roomField">Sala da aula (obrigatória)<input maxlength="40" name="room" placeholder="Ex.: C2.8"/></label><label class="hidden" id="turmaField">Turma (obrigatória para TPC)<input maxlength="50" name="turma" placeholder="Ex.: 11.º A"/></label><label id="subjectField">Disciplina / grupo<input maxlength="80" name="subject" placeholder="Ex.: Português"/></label><label id="durationField">Duração (minutos)<input max="360" min="15" name="duration" step="5" type="number" value="50"/></label><p class="help" id="repeatField">As aulas são automaticamente semanais durante o ano letivo selecionado.</p><label id="reminderField">Avisar antes<select name="reminder"><option value="">Sem alerta</option><option value="0">Na hora</option><option value="5">5 minutos</option><option value="15">15 minutos</option><option value="30">30 minutos</option><option value="60">1 hora</option><option value="1440">1 dia</option></select></label><label>Notas<textarea name="notes" placeholder="Informações adicionais"></textarea></label><div class="formactions"><button class="btn secondary" id="cancel" type="button">Cancelar</button><button class="btn" type="submit">Guardar</button></div></form></dialog><nav class="mobile-bottom-nav" aria-label="Navegação principal">
 <button type="button" data-view="inicio" class="active" aria-label="Início"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-7h6v7"/></svg>Início</button>
 <button type="button" data-view="calendario"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg>Agenda</button>
 <button type="button" data-view="horario"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Horário</button>
@@ -320,4 +410,159 @@ $('#breakForm').onsubmit=e=>{e.preventDefault();let f=new FormData(e.target),st=
 function easter(y){let a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(b/4),e=b%4,f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30,i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,m=Math.floor((a+11*h+22*l)/451),mo=Math.floor((h+l-7*m+114)/31),da=(h+l-7*m+114)%31+1;return new Date(y,mo-1,da,12)}
 $('#addHolidays').onclick=()=>{let y=schoolYear,y2=y+1,e=easter(y2),off=n=>{let d=new Date(e);d.setDate(d.getDate()+n);return dateKey(d)};let list=[['Implantação da República',`${y}-10-05`],['Todos os Santos',`${y}-11-01`],['Restauração da Independência',`${y}-12-01`],['Imaculada Conceição',`${y}-12-08`],['Natal',`${y}-12-25`],['Ano Novo',`${y2}-01-01`],['Carnaval',off(-47)],['Sexta-feira Santa',off(-2)],['Páscoa',off(0)],['Dia da Liberdade',`${y2}-04-25`],['Dia do Trabalhador',`${y2}-05-01`],['Corpo de Deus',off(60)],['Dia de Portugal',`${y2}-06-10`]];let n=0;for(const [label,k] of list){if(!data.breaks.some(b=>b.start===k&&b.end===k)){data.breaks.push({id:newId(),label,start:k,end:k});n++}}save();render();alert(n?`Foram acrescentados ${n} feriados de ${y}/${y2}. Os feriados municipais e as férias (Natal, Páscoa, verão) acrescentam-se à mão, com as datas da escola.`:'Os feriados deste ano letivo já estavam registados.')};
 startReminders();
-</script><script src="./drive-sync.js?v=4.5"></script></body></html>
+</script><script>
+/* MAGISTER 4.6 — visão alargada: resumo do dia/semana/mês, datas importantes, semana, a fazer, cores por tipo e vistas Dia/Semana/Mês */
+(()=>{
+const uiKey='magister-ui';let ui={};try{ui=JSON.parse(localStorage.getItem(uiKey))||{}}catch{ui={}}
+if(!['dia','semana','mes'].includes(ui.calMode))ui.calMode='semana';
+if(typeof ui.showAulas!=='boolean')ui.showAulas=true;
+const saveUI=()=>{try{localStorage.setItem(uiKey,JSON.stringify(ui))}catch{}};
+const addDays=(d,n)=>{let x=new Date(d);x.setDate(x.getDate()+n);return x};
+const mondayOf=d=>{let x=new Date(d.getFullYear(),d.getMonth(),d.getDate(),12);x.setDate(x.getDate()-((x.getDay()+6)%7));return x};
+const todayKey=()=>dateKey(new Date());
+const dayDiff=k=>Math.round((parseDate(k)-parseDate(todayKey()))/86400000);
+const occ=(x,k)=>x.type==='aula'?{...x,date:k}:x;
+const range=(a,b,f)=>{let out=[];for(let d=parseDate(a);dateKey(d)<=b;d=addDays(d,1)){let k=dateKey(d);for(const x of itemsOn(k))if(!f||f(x))out.push(occ(x,k))}return out};
+const plural={evento:['compromisso','compromissos'],aula:['aula','aulas'],tarefa:['tarefa','tarefas'],avaliacao:['avaliação','avaliações'],tpc:['TPC','TPC']};
+const breakdown=list=>{let c={};list.forEach(x=>c[x.type]=(c[x.type]||0)+1);return ['evento','avaliacao','tarefa','tpc','aula'].filter(t=>c[t]).map(t=>c[t]+' '+plural[t][c[t]===1?0:1]).join(' · ')};
+const shortDate=k=>parseDate(k).toLocaleDateString('pt-PT',{weekday:'short',day:'numeric',month:'short'});
+const whenText=k=>{let n=dayDiff(k);return n===0?'Hoje':n===1?'Amanhã':n<0?(n===-1?'Ontem':`Há ${-n} dias`):`Faltam ${n} dias`};
+const star=x=>x.important?'★ ':'';
+const notAula=x=>x.type!=='aula';
+const open=id=>{let x=data.items.find(y=>y.id===id);if(x)openForm(x)};
+const goDay=k=>{selected=parseDate(k);shown=new Date(selected.getFullYear(),selected.getMonth(),1)};
+const legendHTML='<div class="legend" aria-label="Legenda das cores"><span class="t-aula">Aulas</span><span class="t-evento">Compromissos</span><span class="t-avaliacao">Avaliações</span><span class="t-tarefa">Tarefas</span><span class="t-tpc">TPC</span><span class="t-brk">Interrupções</span></div>';
+
+/* ---------- estrutura nova da Visão geral ---------- */
+const ini=$('#inicio');
+ini.insertAdjacentHTML('afterbegin','<div id="keyDates"></div>');
+$('#inicio .cards').innerHTML=
+ '<button type="button" class="stat" data-go="dia"><span class="muted">Hoje</span><b id="todayCount">0</b><span class="info" id="todayInfo"></span></button>'+
+ '<button type="button" class="stat" data-go="semana"><span class="muted">Esta semana</span><b id="weekCount">0</b><span class="info" id="weekInfo"></span></button>'+
+ '<button type="button" class="stat" data-go="mes"><span class="muted">Este mês</span><b id="classCount">0</b><span class="info" id="monthInfo"></span></button>'+
+ '<button type="button" class="stat" data-go="todo" id="lateCard"><span class="muted">Em atraso</span><b id="taskCount">0</b><span class="info" id="lateInfo"></span></button>';
+$('#inicio .cards').insertAdjacentHTML('afterend','<div class="panel" id="weekHomePanel"><div id="weekHome"></div></div>');
+const content=$('#inicio .content'),dayPanel=content.children[1],side=document.createElement('div');
+side.className='sidecol';content.append(side);
+side.insertAdjacentHTML('beforeend','<div class="panel" id="todoPanel"><div class="todohead"><h2>A fazer</h2><button type="button" class="linkbtn" id="todoAll">Ver todas ›</button></div><div id="todoList"></div></div>');
+side.append(dayPanel);
+$('#inicio .content .panel .calhead').insertAdjacentHTML('afterend',legendHTML);
+$('#todoAll').onclick=()=>switchView('tarefas');
+ini.querySelectorAll('.cards [data-go]').forEach(b=>b.onclick=()=>{
+ const go=b.dataset.go;
+ if(go==='todo'){$('#todoPanel').scrollIntoView({behavior:'smooth',block:'start'});return}
+ goDay(todayKey());ui.calMode=go;saveUI();switchView('calendario')});
+
+/* ---------- estrutura nova da Agenda (Calendário) ---------- */
+const calPanel=$('#calendario .panel'),monthHead=calPanel.querySelector('.calhead');
+calPanel.insertAdjacentHTML('afterbegin','<div class="viewbar"><div class="seg" role="tablist" aria-label="Tipo de vista"><button type="button" data-mode="dia">Dia</button><button type="button" data-mode="semana">Semana</button><button type="button" data-mode="mes">Mês</button></div>'+legendHTML+'</div><div class="calhead" id="dayNav"><h2 id="dayNavTitle"></h2><div class="arrows"><button type="button" id="dayPrev" aria-label="Dia anterior">‹</button><button type="button" id="dayNext" aria-label="Dia seguinte">›</button><button type="button" id="dayToday">Hoje</button></div></div><div id="weekCal"></div>');
+calPanel.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{ui.calMode=b.dataset.mode;saveUI();render()});
+$('#dayPrev').onclick=()=>{goDay(dateKey(addDays(selected,-1)));render()};
+$('#dayNext').onclick=()=>{goDay(dateKey(addDays(selected,1)));render()};
+$('#dayToday').onclick=()=>{goDay(todayKey());render()};
+
+/* ---------- campo «Data importante» no formulário ---------- */
+const form=$('#recordForm');
+form.querySelector('textarea[name="notes"]').closest('label').insertAdjacentHTML('beforebegin','<label class="inlinecheck" style="gap:9px;font-weight:600"><input type="checkbox" name="important"> ★ Data importante (aparece no topo da Visão geral)</label>');
+const _openForm=openForm;
+openForm=function(x){_openForm(x);form.elements.namedItem('important').checked=!!(x&&x.important)};
+const _submit=form.onsubmit;
+form.onsubmit=function(e){const imp=form.elements.namedItem('important').checked,ed=editing,ids=new Set(data.items.map(x=>x.id));_submit.call(form,e);let rec=ed?data.items.find(x=>x.id===ed):data.items.find(x=>!ids.has(x.id));if(rec&&!!rec.important!==imp){rec.important=imp;save();render()}};
+
+/* ---------- calendário do mês: cores por tipo, sem repetir as aulas ---------- */
+renderCalendar=function(target,label){
+ $(label).textContent=shown.toLocaleDateString('pt-PT',{month:'long',year:'numeric'});
+ const big=target==='#calendar2';
+ let first=(shown.getDay()+6)%7,start=new Date(shown.getFullYear(),shown.getMonth(),1-first,12),
+ html=['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'].map(d=>`<div class="weekday">${d}</div>`).join('');
+ for(let i=0;i<42;i++){
+  let d=addDays(start,i),key=dateKey(d),events=sorted(itemsOn(key).filter(notAula)),brk=breakOn(key),other=d.getMonth()!==shown.getMonth(),marks;
+  if(big){let n=3,list=events.slice(0,n).map(x=>`<span class="chip t-${x.type} ${x.done?'done':''}" title="${escapeHTML(x.title)}">${star(x)}${escapeHTML(x.title)}</span>`).join('');
+   marks=`<span class="chips">${brk?`<span class="chip t-brk">${escapeHTML(brk.label)}</span>`:''}${list}${events.length>n?`<span class="chipmore">+${events.length-n} mais</span>`:''}</span>`}
+  else marks=`<span>${events.slice(0,5).map(x=>`<span class="dot t-${x.type}" title="${escapeHTML(x.title)}"></span>`).join('')}</span>`;
+  html+=`<button title="${brk?escapeHTML(brk.label):''}" class="day ${brk?'brk':''} ${other?'other':''} ${key===dateKey(selected)?'selected':''} ${key===todayKey()?'today':''}" data-date="${key}"><span class="number">${d.getDate()}</span>${marks}</button>`}
+ $(target).innerHTML=html;
+ $(target).querySelectorAll('[data-date]').forEach(b=>b.onclick=()=>{goDay(b.dataset.date);render()})};
+
+/* ---------- lista de um dia com cores por tipo ---------- */
+eventsHTML=function(){let k=dateKey(selected),brk=breakOn(k),items=sorted(itemsOn(k)).map(x=>occ(x,k));
+ return (brk?`<p class="breaknote">${escapeHTML(brk.label)} · sem aulas</p>`:'')+(items.length?items.map(x=>`<div class="event t-${x.type}"><div class="eventrow"><div class="line"></div><div style="flex:1"><strong style="${x.done?'text-decoration:line-through;opacity:.55':''}">${star(x)}${escapeHTML(x.title)}</strong><span>${escapeHTML(x.time||'Sem hora')}${x.type==='aula'&&x.time?'–'+endTime(x):''} · ${typeNames[x.type]||escapeHTML(x.type)} ${x.turma?'· '+escapeHTML(x.turma):''} ${x.room?'· Sala '+escapeHTML(x.room):''}</span>${x.notes?`<p class="help">${escapeHTML(x.notes)}</p>`:''}</div><div class="rowbtns"><button class="btn secondary" data-edit="${x.id}" aria-label="Editar registo">Editar</button><button class="btn secondary" data-delete="${x.id}" aria-label="Eliminar registo">×</button></div></div></div>`).join(''):'<p class="empty">Sem registos neste dia. Usa «Novo registo» para começar.</p>')};
+
+/* ---------- semana ---------- */
+function weekHTML(where){
+ let mon=mondayOf(selected),all=[...Array(7)].map((_,i)=>addDays(mon,i));
+ let days=all.filter((d,i)=>i<5||itemsOn(dateKey(d)).some(notAula));
+ let sun=all[6],sameMonth=mon.getMonth()===sun.getMonth();
+ let label=sameMonth?`${mon.getDate()} a ${sun.getDate()} de ${sun.toLocaleDateString('pt-PT',{month:'long',year:'numeric'})}`:`${mon.toLocaleDateString('pt-PT',{day:'numeric',month:'short'})} a ${sun.toLocaleDateString('pt-PT',{day:'numeric',month:'short',year:'numeric'})}`;
+ let cols=days.map(d=>{let k=dateKey(d),brk=breakOn(k),items=sorted(itemsOn(k).filter(x=>ui.showAulas||notAula(x))).map(x=>occ(x,k));
+  let body=items.map(x=>`<button type="button" class="witem t-${x.type} ${x.done?'done':''}" data-open="${x.id}" title="${escapeHTML(typeNames[x.type]||'')}"><b>${escapeHTML(x.time&&x.type!=='tarefa'?x.time+(x.type==='aula'?'–'+endTime(x):''):typeNames[x.type]||'')}</b>${star(x)}${escapeHTML(x.title)}${(x.turma||x.room)?`<small>${escapeHTML(x.turma||'')}${x.turma&&x.room?' · ':''}${x.room?'Sala '+escapeHTML(x.room):''}</small>`:''}</button>`).join('');
+  return `<div class="wkday ${k===todayKey()?'today':''} ${brk?'brk':''} ${!items.length&&!brk?'empty':''}"><button type="button" class="wkdayhead" data-day="${k}">${d.toLocaleDateString('pt-PT',{weekday:'long'}).replace(/-feira/,'')}<small>${d.getDate()} ${d.toLocaleDateString('pt-PT',{month:'short'}).replace('.','')}</small></button>${brk?`<span class="wkbrk">${escapeHTML(brk.label)}</span>`:''}${body||(brk?'':'<span class="wkfree">Livre</span>')}</div>`}).join('');
+ let rest=range(dateKey(mon),dateKey(sun),x=>notAula(x)&&!x.done);
+ return `<div class="wkhead-bar"><div><h2>Semana · ${label}</h2><span class="muted">${rest.length?breakdown(rest)+' por fazer':'Nada pendente nesta semana'}</span></div><div class="wktools noprint"><label><input type="checkbox" data-wk="aulas" ${ui.showAulas?'checked':''}> Mostrar aulas</label><button type="button" data-wk="prev" aria-label="Semana anterior">‹</button><button type="button" data-wk="next" aria-label="Semana seguinte">›</button><button type="button" data-wk="today">Esta semana</button><button type="button" data-wk="print">🖨 Imprimir</button></div></div>${where==='home'?'<div class="noprint" style="margin:-4px 0 12px">'+legendHTML+'</div>':''}<div class="wkwrap"><div class="wk" style="--cols:${days.length}">${cols}</div></div>`}
+function wireWeek(el,where){
+ el.onclick=e=>{let t=e.target.closest('[data-wk],[data-open],[data-day]');if(!t||t.dataset.wk==='aulas')return;
+  if(t.dataset.open){open(t.dataset.open);return}
+  if(t.dataset.day){goDay(t.dataset.day);if(where==='cal'){ui.calMode='dia';saveUI()}render();return}
+  let a=t.dataset.wk;if(a==='prev')goDay(dateKey(addDays(selected,-7)));if(a==='next')goDay(dateKey(addDays(selected,7)));if(a==='today')goDay(todayKey());
+  if(a==='print'){printWeek(el);return}render()};
+ el.onchange=e=>{if(e.target.dataset.wk==='aulas'){ui.showAulas=e.target.checked;saveUI();render()}}}
+function printWeek(el){let area=$('#printArea');if(!area){area=document.createElement('div');area.id='printArea';document.body.append(area)}
+ area.innerHTML=el.innerHTML;document.body.classList.add('printing');
+ const done=()=>{document.body.classList.remove('printing');area.innerHTML='';window.removeEventListener('afterprint',done)};
+ window.addEventListener('afterprint',done);window.print()}
+
+/* ---------- datas importantes ---------- */
+function keyDatesHTML(){
+ let t=todayKey(),lim=dateKey(addDays(new Date(),60)),list=[];
+ for(const x of data.items){if(x.type==='aula'||x.done||!x.date)continue;if((x.type==='avaliacao'||x.important)&&x.date>=t&&x.date<=lim)list.push({k:x.date,title:star(x)+x.title,sub:typeNames[x.type]+(x.turma?' · '+x.turma:''),cls:'t-'+x.type,id:x.id})}
+ for(const b of data.breaks){if(b.end>=t&&b.start<=lim)list.push({k:b.start<t?t:b.start,title:b.label,sub:b.start<=t?'A decorrer'+(b.end!==b.start?' até '+fmtDate(b.end):''):(b.end!==b.start?'Até '+fmtDate(b.end):'Sem aulas'),cls:'t-brk',brk:true,start:b.start})}
+ list.sort((a,b)=>a.k.localeCompare(b.k));list=list.slice(0,8);
+ let head='<div class="keyhead"><h2>Próximas datas importantes</h2><small>Próximos 60 dias</small></div>';
+ if(!list.length)return head+'<p class="keyempty">Sem avaliações nem datas marcadas. Ao criar um registo, assinala «★ Data importante» para o veres aqui (ex.: lançamento no Inovar, conselhos de turma).</p>';
+ return head+'<div class="keydates">'+list.map(i=>{let n=dayDiff(i.k);return `<button type="button" class="kd ${i.cls} ${n<=7?'soon':''}" ${i.id?`data-open="${i.id}"`:''} data-day="${i.brk?i.start:i.k}"><span class="when">${i.brk&&i.start<=t?'Agora':whenText(i.k)}</span><strong title="${escapeHTML(i.title)}">${escapeHTML(i.title)}</strong><small>${escapeHTML(shortDate(i.k))} · ${escapeHTML(i.sub)}</small></button>`}).join('')+'</div>'}
+
+/* ---------- a fazer (tarefas e TPC por concluir, por urgência) ---------- */
+function todoHTML(){
+ let t=todayKey(),sun=dateKey(addDays(mondayOf(new Date()),6)),four=dateKey(addDays(new Date(),28));
+ let items=sorted(data.items.filter(x=>(x.type==='tarefa'||x.type==='tpc')&&!x.done));
+ let groups=[['late','Atrasado',x=>x.date<t],['week','Esta semana',x=>x.date>=t&&x.date<=sun],['next','Próximas semanas',x=>x.date>sun&&x.date<=four],['later','Mais tarde',x=>x.date>four]];
+ if(!items.length)return '<p class="empty">Nada por fazer. Bom trabalho!</p>';
+ return groups.map(([id,name,f])=>{let g=items.filter(f);if(!g.length)return'';let vis=id==='later'?g.slice(0,4):g;
+  return `<div class="todogroup ${id}"><h3>${name} (${g.length})</h3>${vis.map(x=>`<div class="todorow t-${x.type}"><input class="check" type="checkbox" data-todo="${x.id}" aria-label="Marcar como feito"><div class="tt" data-open="${x.id}"><strong>${star(x)}${escapeHTML(x.title)}</strong><small><span class="typetag">${typeNames[x.type]}</span>${escapeHTML(shortDate(x.date))}${id==='late'?' · '+whenText(x.date).toLowerCase():''}${x.turma?' · '+escapeHTML(x.turma):''}</small></div></div>`).join('')}${g.length>vis.length?`<p class="muted">+${g.length-vis.length} mais em Tarefas / TPC</p>`:''}</div>`}).join('')}
+
+/* ---------- resumo nos cartões ---------- */
+function cards(){
+ let t=todayKey(),mon=mondayOf(new Date()),first=new Date(),last;first=new Date(first.getFullYear(),first.getMonth(),1,12);last=new Date(first.getFullYear(),first.getMonth()+1,0,12);
+ let pend=x=>notAula(x)&&!x.done;
+ let today=range(t,t),todayP=today.filter(pend),aulasHoje=today.filter(x=>x.type==='aula').length;
+ let week=range(dateKey(mon),dateKey(addDays(mon,6)),pend),month=range(dateKey(first),dateKey(last),pend);
+ let late=data.items.filter(x=>(x.type==='tarefa'||x.type==='tpc')&&!x.done&&x.date&&x.date<t);
+ $('#todayCount').textContent=todayP.length;$('#todayInfo').textContent=[breakdown(todayP),aulasHoje?aulasHoje+(aulasHoje===1?' aula':' aulas'):''].filter(Boolean).join(' · ')||'Dia livre';
+ $('#weekCount').textContent=week.length;$('#weekInfo').textContent=breakdown(week)||'Nada marcado';
+ $('#classCount').textContent=month.length;$('#monthInfo').textContent=breakdown(month)||'Nada marcado';
+ $('#taskCount').textContent=late.length;$('#lateInfo').textContent=late.length?breakdown(late):'Tudo em dia';
+ $('#lateCard').classList.toggle('late-alert',late.length>0)}
+
+/* ---------- desenhar tudo ---------- */
+function renderExtras(){
+ cards();
+ $('#keyDates').innerHTML=keyDatesHTML();
+ $('#keyDates').onclick=e=>{let b=e.target.closest('.kd');if(!b)return;if(b.dataset.open)open(b.dataset.open);else{goDay(b.dataset.day);ui.calMode='semana';saveUI();switchView('calendario')}};
+ $('#weekHome').innerHTML=weekHTML('home');
+ $('#todoList').innerHTML=todoHTML();
+ $('#todoList').querySelectorAll('[data-todo]').forEach(c=>c.onchange=()=>{let x=data.items.find(y=>y.id===c.dataset.todo);if(x){x.done=c.checked;save();render()}});
+ $('#todoList').querySelectorAll('[data-open]').forEach(d=>d.onclick=()=>open(d.dataset.open));
+ const m=ui.calMode;
+ calPanel.querySelectorAll('[data-mode]').forEach(b=>{b.classList.toggle('on',b.dataset.mode===m);b.setAttribute('aria-selected',b.dataset.mode===m)});
+ monthHead.classList.toggle('hidden',m!=='mes');$('#calendar2').classList.toggle('hidden',m!=='mes');$('#dayTitle2').classList.toggle('hidden',m!=='mes');
+ $('#dayNav').classList.toggle('hidden',m!=='dia');$('#dayEvents2').classList.toggle('hidden',m==='semana');
+ $('#weekCal').classList.toggle('hidden',m!=='semana');
+ $('#dayNavTitle').textContent=selected.toLocaleDateString('pt-PT',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+ if(m==='semana')$('#weekCal').innerHTML=weekHTML('cal');
+ wireDeletes()}
+wireWeek($('#weekHome'),'home');wireWeek($('#weekCal'),'cal');
+const _render=render;
+render=function(){_render();try{renderExtras()}catch(err){console.error('MAGISTER 4.6',err)}};
+render();
+})();
+</script><script src="./drive-sync.js?v=4.6"></script></body></html>

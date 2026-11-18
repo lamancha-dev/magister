@@ -1,5 +1,5 @@
-/* MAGISTER 4.5 — funciona sem Internet, mas vai SEMPRE buscar primeiro a versão mais recente. */
-const CACHE='magister-v4-5';
+/* MAGISTER 4.6 — funciona sem Internet, mas vai SEMPRE buscar primeiro a versão mais recente. */
+const CACHE='magister-v4-6';
 const ASSETS=['./','./index.html','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./aejd-logo.png','./drive-sync.js','./fonte/poppins-magister.woff'];
 self.addEventListener('install',event=>{
   // cache:'reload' obriga a ir ao servidor, em vez de usar cópias antigas guardadas pelo navegador

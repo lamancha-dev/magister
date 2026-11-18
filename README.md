@@ -6,7 +6,7 @@ Aplicação web instalável (telemóvel, tablet e computador) para professores: 
 
 🔗 **Abrir a aplicação:** https://lamancha-dev.github.io/magister/
 
-Versão atual: **4.5**
+Versão atual: **4.6**
 
 ## Como está organizado este repositório
 
